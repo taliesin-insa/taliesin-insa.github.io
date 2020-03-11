@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Taliesin</title>
+
+    <!-- CSS -->
+    <!-- Font Awesome Icon -->
+    <script src="https://kit.fontawesome.com/73e67c9c8d.js" crossorigin="anonymous"></script>
+    <!-- Boostrap CSS-->
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="taliesin-theme.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbar-taliesin">
+
+<!--&lt;!&ndash; Background Image &ndash;&gt;-->
+<!--<div class="bg-img" style="background-image: url('../images/bibliotheque3.jpg');">-->
+<!--    <div class="overlay"></div>-->
+<!--</div>-->
+<!--&lt;!&ndash; /Background Image &ndash;&gt;-->
+
+<!-- Top navigation bar -->
+<nav id="navbar-taliesin" class="navbar navbar-expand-sm navbar-dark bg-light"
+     style="position:fixed; overflow: hidden; top:0; width:100%; z-index: 1;">
+
+    <!-- Logo -->
+    <div class="navbar-brand">
+        <a href="taliesin_FR.html"><img class="header-logo" src="../images/logos/logo-bicolor.png" alt="logo"></a>
+    </div>
+
+    <!-- Collapse nav button -->
+    <div class="nav-collapse">
+        <span></span>
+    </div>
+
+    <div class="collapse navbar-collapse">
+
+        <!-- Sections of the page -->
+        <ul class="main-nav nav navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#team">Équipe</a></li>
+            <li class="nav-item"><a class="nav-link" href="#origin">Origine</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mockups">Interface</a></li>
+            <li class="nav-item"><a class="nav-link" href="#microservices">Architecture</a></li>
+        </ul>
+
+        <!-- Title of the project -->
+        <!--        <div class="navbar-brand abs-center-x" style="text-align: center; color:white;">-->
+        <!--            Logiciel de génération de bases d'apprentissage pour la reconnaissance d'écriture manuscrite-->
+        <!--        </div>-->
+
+        <!-- Switch language -->
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="taliesin_ENG.html">
+                    <img alt="English" title="English" src="../images/united-kingdom-flag-button-square-icon-32.png"
+                         width="32" height="32">
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<!-- Background -->
+<div style="position: fixed;">
+    <img style="width: 100%; z-index: -1;" src="../images/bibliotheque3.jpg" alt="biblio">
+    <img style="width: 100%; z-index: -1;" src="../images/bibliotheque3.jpg" alt="biblio">
+</div>
+
+<!-- Project description -->
+<div id="home" class="before-section mb-5">
+    <div class="container section section-gray p-4">
+        <!-- Title project description -->
+        <h1 class="display-3 text-secondary-light section-tile section-title-after mb-3">Taliesin c'est quoi ?</h1>
+
+        <div class="container">
+            <!-- Text project description -->
+            <p class="text-justify">
+                Notre projet a pour but de fournir une application permettant de simplifier la création de
+                bases d'images annotées. Ces bases serviront pour l’entraînement de divers systèmes de
+                reconnaissance d’écriture manuscrite. Ces reconnaisseurs seront par exemple capables de
+                retranscrire de manière automatique des documents manuscrits (registres paroissiaux,
+                registres d’état civil, documents d’entreprise, etc.) pour les rendre plus exploitables. Ce
+                projet permet donc de gagner du temps pour la phase précédant la compréhension de documents
+                anciens, en simplifiant l’entraînement de systèmes complexes.
+                <br>
+                <img class="rounded mx-auto d-block mt-4" src="../images/schema-general.png" alt="schema"
+                     style="max-height: 400px;"/>
+                <br>
+                Plus concrètement, Taliesin est une application qui prend des documents scannés en entrée
+                et qui permet à un utilisateur de les annoter. Cela signifie qu'une transcription est
+                associée au texte présent dans l'image. L'application propose deux modes à l'utilisateur :
+            </p>
+            <br>
+            <ul>
+                <li class="mb-2">
+                    <p>
+                        <i class="fas fa-feather mr-2"></i>
+                        un mode d'<span class="text-primary">annotation manuelle</span>, où l'utilisateur tape
+                        intégralement les transcriptions du document scanné;
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i class="fas fa-pen-alt mr-2"></i>
+                        un mode <span class="text-primary">assisté par un système automatique</span>, où des
+                        transcriptions
+                        sont générées au préalable par un reconnaisseur d'écriture manuscrite déjà entraîné.
+                        Dans ce mode, l'utilisateur n'a plus qu'à corriger les éventuelles erreurs de transcription
+                        faites par le reconnaisseur qui l'assiste dans son annotation. Le reconnaisseur utilisé
+                        pour la première version de l'application est <a
+                            href="https://github.com/jpuigcerver/Laia">Laia</a>.
+                    </p>
+                </li>
+            </ul>
+            <br>
+            <p>
+                Taliesin génère donc un ensemble d'exemples d'apprentissage (couples <i>image +
+                transcription du texte dans l'image</i>) validés par l'utilisateur.
+                Une fois la base d'images annotée, l'utilisateur n'a plus qu'à exporter les exemples en question qu'il
+                pourra utiliser pour entraîner des reconnaisseurs d'écriture manuscrite.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<!-- Team and partners -->
+<div id="team" class="before-section mb-5">
+    <div class="container section section-gray p-4">
+        <!-- Title team -->
+        <h1 class="display-3 text-secondary-light section-tile section-title-after mb-3">Qui sommes nous ?</h1>
+
+        <div class="container">
+            <!-- Team -->
+            <div>
+                <h2 class="text-primary">Développeurs</h2>
+                <br>
+                <p class="text-justify">
+                    Notre équipe se compose de huit étudiants en quatrième année au département INFORMATIQUE de l'INSA
+                    Rennes.
+                </p>
+                <br>
+                <!-- Face images -->
+                <!-- Row 1 -->
+                <div class="row">
+                    <div class="face-image-wrap col">
+                        <img class="face-image" src="../images/face-images/faceNathan.png" alt="Face Nathan"/>
+                        <p>Nathan Balix</p>
+                        <a class="show-on-hover d-none" href="https://www.linkedin.com/in/nathan-balix/">
+                            <i class="fab fa-linkedin fa-4x"></i>
+                        </a>
+                    </div>
+                    <div class="face-image-wrap col">
+                        <img class="face-image" src="../images/face-images/facePA.png" alt="Face Pierre-Antoine"/>
+                        <p>Pierre-Antoine Cabaret</p>
+                        <a class="show-on-hover d-none" href="https://inkaru.github.io/">
+                            <i class="far fa-address-card fa-4x"></i>
+                        </a>
+                    </div>
+                    <div class="face-image-wrap col">
+                        <img class="face-image" src="../images/face-images/faceMatthieu.png" alt="Face Matthieu"/>
+                        <p>Matthieu Darfay</p>
+                        <a class="show-on-hover d-none" href="https://www.linkedin.com/in/matthieu-darfay/">
+                            <i class="fab fa-linkedin fa-4x"></i>
+                        </a>
+                    </div>
+                    <div class="face-image-wrap col">
+                        <img class="face-image" src="../images/face-images/faceNico.png" alt="Face Nicolas"/>
+                        <p>Nicolas Fouqué</p>
+                        <a class="show-on-hover d-none" href="https://nk-fouque.github.io/">
+                            <i class="far fa-address-card fa-4x"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- /Row 1-->
+                <!-- Row 2 -->
+                <div class="row">
+                    <div class="face-image-wrap col">
+                        <img class="face-image" src="../images/face-images/facePA.png" alt="Face Clara"/>
+                        <p>Clara Gaouyer</p>
+                        <a class="show-on-hover d-none" href="https://www.linkedin.com/in/clara-gaouyer-634189134/">
+                            <i class="fab fa-linkedin fa-4x"></i>
+                        </a>
+                    </div>
+                    <div class="face-image-wrap col">
+                        <img class="face-image" src="../images/face-images/faceEmilie.png" alt="Face Emilie"/>
+                        <p>Emilie Hummel</p>
+                        <a class="show-on-hover d-none" href="https://unegregre.github.io/">
+                            <i class="far fa-address-card fa-4x"></i>
+                        </a>
+                    </div>
+                    <div class="face-image-wrap col">
+                        <img class="face-image" src="../images/face-images/faceFlorian.png" alt="Face Florian"/>
+                        <p>Florian Le Minoux</p>
+                        <a class="show-on-hover d-none" href="https://darkgallium.github.io/">
+                            <i class="far fa-address-card fa-4x"></i>
+                        </a>
+                    </div>
+                    <div class="face-image-wrap col">
+                        <img class="face-image" src="../images/face-images/faceZoe.png" alt="Face Zoé"/>
+                        <p>Zoé Levrel</p>
+                        <a class="show-on-hover d-none" href="https://www.linkedin.com/in/zoe-levrel/">
+                            <i class="fab fa-linkedin fa-4x"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- /Row 2 -->
+            </div>
+            <br>
+            <!-- Partners -->
+            <div>
+                <h2 class="text-primary">Encadrants et partenaires</h2>
+                <p class="text-justify">
+                    Ce projet nous a été proposé par l'équipe IntuiDoc de l'IRISA, en collaboration avec la start-up
+                    Doptim et avec le soutien de Jean-Yves LE CLERC, conservateur du patrimoine aux archives
+                    départementales d'Ille-et-Vilaine. Tout au long de l'année, nous avons été encadrés par Bertrand
+                    COÜASNON, enseignant-chercheur membre d'IntuiDoc, Erwan FOUCHÉ, chef de projet chez Sopra Steria et
+                    Julien BOUVET ainsi qu'Alexandre GIMENEZ PUIG, ingénieurs chez Sopra Steria également. Nous avons
+                    aussi été accompagnés par Sophie TARDIVEL, responsable et data scientist chez Doptim.
+                </p>
+            </div>
+            <br>
+            <!-- Partners logos -->
+            <div class="row mb-4 bg-white" style="max-height: 200px;">
+                <div class="col my-auto">
+                    <img class="img-fluid mx-auto d-block" src="../images/logos/intuidoc.png" alt="intuidoc"
+                         style="max-height: 200px;"/>
+                </div>
+                <div class="col my-auto">
+                    <img class="img-fluid mx-auto d-block" src="../images/logos/soprasteria-logo.jpeg"
+                         alt="sopra steria" style="max-height: 200px;"/>
+                </div>
+                <div class="col my-auto">
+                    <img class="img-fluid mx-auto d-block" src="../images/logos/ille-et-vilaine-logo.png"
+                         alt="ille-et-vilaine" style="max-height: 200px;"/>
+                </div>
+                <div class="col my-auto">
+                    <img class="img-fluid mx-auto d-block" src="../images/logos/doptim-white.png"
+                         alt="doptim" style="max-height: 200px;"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project origin -->
+<div id="origin" class="before-section mb-5">
+    <div class="container section section-gray p-4">
+        <!-- Title origin -->
+        <h1 class="display-3 text-secondary-light section-tile section-title-after mb-3">Pourquoi Taliesin ?</h1>
+
+        <!-- Text origin -->
+        <div class="container">
+            <p class="text-justify">
+                Dans le cadre de ses recherches l’équipe IntuiDoc de l’IRISA, en collaboration avec les archives
+                départementales d’Ille-et-Vilaine, cherche à faire avancer le domaine de la reconnaissance
+                d’écriture manuscrite afin de rendre plus accessibles des textes anciens qui sont souvent peu
+                compréhensibles. En effet, l'écriture manuscrite des siècles passés ainsi que les dégradations dues
+                au passage du temps diminuent la lisibilité de ces documents. En s'aidant de systèmes automatiques,
+                cela simplifie ainsi grandement leur exploitation.
+                <br><br>
+                Il n’est pas simple d’écrire un programme qui reconnaît des textes manuscrits, c’est pourquoi la
+                plupart des systèmes de reconnaissance d’écriture sont basés sur des algorithmes intelligents. Ces
+                algorithmes sont souvent formés de réseaux de neurones qui ont besoin d’apprendre à quoi ressemblent
+                les différents caractères, peu importe la langue et le style du rédacteur.
+                <br>
+                Pour apprendre, ils ont besoin d’un grand nombre d’exemples (plusieurs milliers) qui sont longs et
+                fastidieux à construire à
+                la main. Ces exemples sont regroupés dans des bases d’apprentissage, associant des images de textes
+                manuscrits avec leur retranscriptions numériques. Ainsi, l’algorithme apprend à reconnaître les
+                différentes lettres en comparant ce qu'il suppose être avec la retranscription fournie (la vérité).
+                <br>
+                <br>
+                Taliesin fournit donc un système qui facilite la génération de ces bases d'apprentissage, afin de
+                faciliter le travail des chercheurs.
+            </p>
+            <img class="rounded mx-auto d-block mt-4" src="../images/manager.png" alt="manager"/>
+        </div>
+    </div>
+</div>
+
+<!-- Mockups section -->
+<div id="mockups" class="before-section mb-5">
+    <div class="container section section-blue p-4">
+        <!-- Title mockups -->
+        <h1 class="display-3 text-primary section-tile mb-4">Présentation de l'interface</h1>
+
+        <!-- Carousel mockups -->
+        <div id="mockups-carousel" class="carousel slide w-100 mx-auto" data-ride="carousel">
+
+            <!-- Carousel indicators at the bottom-->
+            <ol class="carousel-indicators">
+                <li data-target="#mockups-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mockups-carousel" data-slide-to="1"></li>
+                <li data-target="#mockups-carousel" data-slide-to="2"></li>
+                <li data-target="#mockups-carousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Carousel images -->
+            <div class="carousel-inner">
+
+                <!-- Mockup home -->
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../images/mockups/mockup-accueil.png" alt="Mockup home page">
+                    <div class="carousel-caption d-none mb-4">
+                        <h5 class="mb-4">Page d'accueil</h5>
+                        <p>
+                            Sur la page d'accueil de Taliesin, l'utilisateur a accès à un tableau de bord rescencant
+                            l'ensemble des bases en cours d'annotation. Depuis cette page, il peut rejoindre les pages
+                            d'annotation, de gestion des bases ou de gestion du reconnaisseur automatique d'écriture.
+                        </p>
+                    </div>
+                    <div class="caption-overlay"></div>
+                </div>
+
+                <!-- Mockup annotation -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/mockups/mockup-annotation.png"
+                         alt="Mockup annotation page">
+                    <div class="carousel-caption d-none mb-4">
+                        <h5 class="mb-4">Page d'annotation</h5>
+                        <p>
+                            C'est sur cette page que l'utilisateur peut taper la transcription du texte contenu dans les
+                            images
+                            qui sont affichées. Après avoir annoté toutes les images, l'utilisateur peut valider les
+                            transcriptions réalisées grâce au bouton vert en bas de page.
+                            <br><br>
+                            L'utilisateur peut activer ou non les suggestions de transcriptions automatiques du
+                            reconnaisseur.
+                            Un petit symbole d'éclair présent à gauche des images permet d'indiquer quand une
+                            transcription
+                            est
+                            issue du reconnaisseur.
+                            Le bouton en forme de croix rouge à côté de chaque image permet d'indiquer qu'elle n'est pas
+                            lisible.
+                        </p>
+                    </div>
+                    <div class="caption-overlay"></div>
+                </div>
+
+                <!-- Mockup database -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/mockups/mockup-base.png"
+                         alt="Mockup database management page">
+                    <div class="carousel-caption d-none mb-4">
+                        <h5 class="mb-4">Page de gestion de la base d'apprentissage</h5>
+                        <p>
+                            Cette page permet à l'utilisateur d'avoir des informations sur le statut de la base en cours
+                            d'annotation (pourcentage d'annotation, nombre d'images illisibles, etc.).
+                        </p>
+                        <br>
+                        L'utilisateur a accès à différentes options de gestion :
+                        <ul style="text-align: left">
+                            <li>Ajouter des images à annoter dans la base</li>
+                            <li>Sauvegarder ou charger une sauvegarde de la base (si besoin de réaliser des sauvegardes
+                                régulières par exemple)
+                            </li>
+                            <li>Exporter la base annotée (sous forme d'archive avec les images et des
+                                fichiers descriptifs contenant les transcriptions)
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="caption-overlay"></div>
+                </div>
+
+                <!-- Mockup reco -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/mockups/mockup-reco.png"
+                         alt="Mockup recognizer management page">
+                    <div class="carousel-caption d-none mb-4">
+                        <h5 class="mb-4">Page de gestion du reconnaisseur automatique d'écriture manuscrite</h5>
+                        <p>
+                            Cette page de l'application donne l'opportunité à l'utilisateur de gérer le système de
+                            reconnaissance automatique mis en place. Il peut ainsi configurer de nouveaux systèmes et
+                            apprendre ces reconnaisseurs, afin d'adapter au mieux le reconnaisseur à ses besoins.
+                            Le reconnaisseur peut devient ainsi meilleur dans ses suggestions de transcription.
+                            <br><br>
+                            Différentes mesures et statistiques sont fournies à l'utilisateur afin de l'aider à décider
+                            quel système utiliser. Plus un reconnaisseur est performant, moins il se trompe dans ses
+                            suggestions, ce qui accélère l'annotation de la base d'apprentissage.
+                        </p>
+                    </div>
+                    <div class="caption-overlay"></div>
+                </div>
+
+            </div>
+
+            <!-- Carousel arrows -->
+            <a class="carousel-control-prev" href="#mockups-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#mockups-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+        <!-- /Carousel mockups -->
+    </div>
+</div>
+<!-- /Mockups section -->
+
+<!-- Architecture details -->
+<div id="microservices" class="before-section mb-5">
+    <div class="container section section-gray p-4">
+        <!-- Title architecture -->
+        <h1 class="display-3 text-secondary-light section-tile">Architecture technique</h1>
+        <h5 class="text-primary section-title-after mb-3 text-center"><i>Cette section présente quelques spécificités techniques du projet</i></h5>
+
+        <!-- Text architecture -->
+        <div class="container text-center">
+            <p class="text-justify">
+                Taliesin est une application web multi-utilisateurs. Afin de pouvoir gérer une forte charge liée à un
+                grand nombre d'utilisateurs simultanés, l'application a été conçue avec une architecture en
+                microservices.
+                Cela signifie que l'application est découpée en plusieurs sous-blocs fonctionnels et indépendants les
+                uns des autres. Chaque bloc est donc chargé d'une fonctionnalité en particulier dans l'application.
+                <br>
+                Dans notre cas, Taliesin est décomposé en 6 microservices (représentés par des hexagones sur le schéma).
+            </p>
+            <img class="img-fluid w-75" src="../images/schema-µserv.png" alt="Microservices schema">
+            <p class="text-justify">
+                <br>
+                Chaque microservice se voit attribuer un rôle spécifique, représenté par une fonctionnalité principale.
+                Les liens entre microservices mettent en évidence les échanges de données entre eux et les appels
+                entre microservices. Les différents blocs sont présentés ci-dessous.
+            </p>
+            <ul>
+                <li><p class="text-left">
+                    <span class="text-primary">
+                    <i class="fas fa-genderless mr-2"></i>
+                    </span>
+                    Au centre on trouve l'<b>interface</b>, qui correspond à la page web
+                    envoyée à l'utilisateur.
+                </p></li>
+                <li><p class="text-left">
+                    <span class="text-primary">
+                    <i class="fas fa-genderless mr-2"></i>
+                    </span>
+                    Le microservice de <b>stockage</b> fait l'interface avec la base de
+                    données de l'application.
+                </p></li>
+                <li><p class="text-left">
+                   <span class="text-primary">
+                    <i class="fas fa-genderless mr-2"></i>
+                    </span>
+                    Le microservice d'<b>import</b> gère l'ajout d'images dans la base
+                    de données.
+                </p></li>
+                <li><p class="text-left">
+                    <span class="text-primary">
+                    <i class="fas fa-genderless mr-2"></i>
+                    </span>
+                    Le microservice d'<b>export</b> à l'inverse permet à l'utilisateur
+                    d'exporter la base finale une fois toutes les images annotées.
+                </p></li>
+                <li><p class="text-left">
+                    <span class="text-primary">
+                    <i class="fas fa-genderless mr-2"></i>
+                    </span>
+                    La <b>conversion</b> intervient au moment de l'import et de l'export
+                    afin de transformer les données vers et depuis un format interne à l'application.
+                </p></li>
+                <li><p class="text-left">
+                    <span class="text-primary">
+                    <i class="fas fa-genderless mr-2"></i>
+                    </span>
+                    La partie <b>reconnaissance</b> gère le reconnaisseur automatique
+                    utilisé dans l'application pour faire des suggestions au cours de l'annotation.
+                </p></li>
+            </ul>
+            <p class="text-justify">
+                <br>
+                Cette architecture est couplée aux technologies
+                <a href="https://kubernetes.io/fr/"><b style="color: #316be4;">Kubernetes</b></a> et
+                <a href="https://www.docker.com/"><b style="color: #0db7ed;">Docker</b></a>.
+                Kubernetes est un <i>orchestrateur</i> qui se charge d'exécuter simultanément tous les blocs de l'application,
+                la rendant opérationnelle.
+                <br>
+                <br>
+                Chacun des microservices de Taliesin est encapsulé dans un <i>conteneur</i> Docker. Ces conteneurs sont
+                une surcouche aux microservices qui permet à Kubernetes de les gérer de manière indépendante. Il est
+                ainsi possible d'exécuter plusieurs fois un bloc de l'application, et de répartir les demandes des
+                utilisateurs entre les différentes copies du microservice.
+                <br>
+                Grâce à cette organisation, Kubernetes crée suffisamment de copies des microservices de manière
+                à supporter la charge, ce qui rend l'application accessible à un grand nombre d'utilisateurs.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- /Architecture details -->
+
+<!-- Footer -->
+<footer id="footer" class="p-lg-2 mt-xl-4 bg-light" style="z-index: 5; position: relative;">
+
+    <!-- Row -->
+    <div class="row">
+        <!-- Empty col -->
+        <div class="col"></div>
+
+        <div class="col text-center">
+            <!-- Footer logo -->
+            <div class="navbar-brand">
+                <a href="#home"><img class="footer-logo" src="../images/logos/logo-bicolor.png" alt="logo"></a>
+            </div>
+            <!-- /Footer logo -->
+        </div>
+
+        <!-- INSA logo -->
+        <div class="col my-auto">
+            <img class="float-right mr-4" src="../images/logos/logo-insa.png" alt="logo insa" style="max-height: 80px;">
+        </div>
+    </div>
+    <!-- /Row -->
+
+</footer>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- /Preloader -->
+
+
+<!-- Scripts for Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<!-- Custom script -->
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
