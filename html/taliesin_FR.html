@@ -75,7 +75,7 @@
 <div id="home" class="before-section mb-5">
     <div class="container w-100 section section-gray p-4">
         <!-- Title project description -->
-        <h1 class="display-3 text-secondary-light section-tile section-title-after mb-3">Taliesin c'est quoi ?</h1>
+        <h1 class="display-3 text-secondary-light section-tile section-title-after mb-3">Taliesin, c'est quoi ?</h1>
 
         <div class="container">
             <!-- Text project description -->
@@ -101,7 +101,7 @@
                     <p>
                         <i class="fas fa-feather mr-2"></i>
                         un mode d'<span class="text-primary">annotation manuelle</span>, où l'utilisateur tape
-                        intégralement les transcriptions du document scanné;
+                        intégralement les transcriptions du document scanné
                     </p>
                 </li>
                 <li>
@@ -133,7 +133,7 @@
 <div id="team" class="before-section mb-5">
     <div class="container w-100 section section-gray p-4">
         <!-- Title team -->
-        <h1 class="display-3 text-secondary-light section-tile section-title-after mb-3">Qui sommes nous ?</h1>
+        <h1 class="display-3 text-secondary-light section-tile section-title-after mb-3">Qui sommes-nous ?</h1>
 
         <div class="container">
             <!-- Team -->
@@ -221,7 +221,7 @@
                     départementales d'Ille-et-Vilaine. Tout au long de l'année, nous avons été encadrés par Bertrand
                     COÜASNON, enseignant-chercheur membre d'IntuiDoc, Erwan FOUCHÉ, chef de projet chez Sopra Steria et
                     Julien BOUVET ainsi qu'Alexandre GIMENEZ PUIG, ingénieurs chez Sopra Steria également. Nous avons
-                    aussi été accompagnés par Sophie TARDIVEL, responsable et data scientist chez Doptim.
+                    aussi été accompagnés par Sophie TARDIVEL, responsable et <i>data scientist</i> chez Doptim.
                 </p>
             </div>
             <br>
@@ -272,8 +272,8 @@
                 Pour apprendre, ils ont besoin d’un grand nombre d’exemples (plusieurs milliers) qui sont longs et
                 fastidieux à construire à
                 la main. Ces exemples sont regroupés dans des bases d’apprentissage, associant des images de textes
-                manuscrits avec leur retranscriptions numériques. Ainsi, l’algorithme apprend à reconnaître les
-                différentes lettres en comparant ce qu'il suppose être avec la retranscription fournie (la vérité).
+                manuscrits avec leur transcription numérique. Ainsi, l’algorithme apprend à reconnaître les
+                différentes lettres en comparant la transcription fournie (la vérité) avec les lettres qu'il a reconnu.
                 <br>
                 <br>
                 Taliesin fournit donc un système qui facilite la génération de ces bases d'apprentissage, afin de
@@ -310,7 +310,7 @@
                     <div class="carousel-caption d-none mb-4">
                         <h5 class="mb-4">Page d'accueil</h5>
                         <p>
-                            Sur la page d'accueil de Taliesin, l'utilisateur a accès à un tableau de bord rescencant
+                            Sur la page d'accueil de Taliesin, l'utilisateur a accès à un tableau de bord recensant
                             l'ensemble des bases en cours d'annotation. Depuis cette page, il peut rejoindre les pages
                             d'annotation, de gestion des bases ou de gestion du reconnaisseur automatique d'écriture.
                         </p>
@@ -333,11 +333,11 @@
                             L'utilisateur peut activer ou non les suggestions de transcriptions automatiques du
                             reconnaisseur.
                             Un petit symbole d'éclair présent à gauche des images permet d'indiquer quand une
-                            transcription
-                            est
-                            issue du reconnaisseur.
+                            transcription est issue du reconnaisseur.
                             Le bouton en forme de croix rouge à côté de chaque image permet d'indiquer qu'elle n'est pas
                             lisible.
+                            Des raccourcis sont également disponibles pour remplacer les clics répétitifs et faciliter
+                            l'annotation.
                         </p>
                     </div>
                     <div class="caption-overlay"></div>
@@ -356,11 +356,11 @@
                         <br>
                         L'utilisateur a accès à différentes options de gestion :
                         <ul style="text-align: left">
-                            <li>Ajouter des images à annoter dans la base</li>
-                            <li>Sauvegarder ou charger une sauvegarde de la base (si besoin de réaliser des sauvegardes
+                            <li>ajouter des images à annoter dans la base</li>
+                            <li>sauvegarder ou charger une sauvegarde de la base (si besoin de réaliser des sauvegardes
                                 régulières par exemple)
                             </li>
-                            <li>Exporter la base annotée (sous forme d'archive avec les images et des
+                            <li>exporter la base annotée (sous forme d'archive avec les images et des
                                 fichiers descriptifs contenant les transcriptions)
                             </li>
                         </ul>
@@ -379,7 +379,7 @@
                             Cette page de l'application donne l'opportunité à l'utilisateur de gérer le système de
                             reconnaissance automatique mis en place. Il peut ainsi configurer de nouveaux systèmes et
                             apprendre ces reconnaisseurs, afin d'adapter au mieux le reconnaisseur à ses besoins.
-                            Le reconnaisseur peut devient ainsi meilleur dans ses suggestions de transcription.
+                            Le reconnaisseur devient ainsi meilleur dans ses suggestions de transcription.
                             <br><br>
                             Différentes mesures et statistiques sont fournies à l'utilisateur afin de l'aider à décider
                             quel système utiliser. Plus un reconnaisseur est performant, moins il se trompe dans ses
@@ -412,7 +412,9 @@
     <div class="container w-100 section section-gray p-4">
         <!-- Title architecture -->
         <h1 class="display-3 text-secondary-light section-tile">Architecture technique</h1>
-        <h5 class="text-primary section-title-after mb-3 text-center"><i>Cette section présente quelques spécificités techniques du projet</i></h5>
+        <h5 class="text-primary section-title-after mb-3 text-center">
+            <i>Spécificités techniques du projet : pour les curieux ou les aguerris !</i>
+        </h5>
 
         <!-- Text architecture -->
         <div class="container text-center">
@@ -437,8 +439,8 @@
                     <span class="text-primary">
                     <i class="fas fa-genderless mr-2"></i>
                     </span>
-                    Au centre on trouve l'<b>interface</b>, qui correspond à la page web
-                    sur laquelle l'utilisateur navigue
+                    Au centre, on trouve l'<b>interface</b>, qui correspond à la page web
+                    sur laquelle l'utilisateur navigue.
                 </p></li>
                 <li><p class="text-left">
                     <span class="text-primary">
@@ -481,13 +483,13 @@
                 Cette architecture est couplée aux technologies
                 <a href="https://kubernetes.io/fr/"><b style="color: #316be4;">Kubernetes</b></a> et
                 <a href="https://www.docker.com/"><b style="color: #0db7ed;">Docker</b></a>.
-                Kubernetes est un <i>orchestrateur</i> qui se charge d'exécuter simultanément tous les blocs de l'application,
+                Kubernetes est un orchestrateur qui se charge d'exécuter simultanément tous les blocs de l'application,
                 la rendant opérationnelle.
-                Chacun des microservices de Taliesin est encapsulé dans un <i>conteneur</i> Docker. Ces conteneurs sont
+                Chacun des microservices de Taliesin est encapsulé dans un conteneur Docker. Ces conteneurs sont
                 une surcouche aux microservices qui permet à Kubernetes de les gérer de manière indépendante.
                 <br>
                 <br>
-                Il est ainsi possible d'exécuter plusieurs fois un bloc de l'application, et de répartir les demandes
+                Il est ainsi possible d'exécuter plusieurs fois un bloc de l'application et de répartir les demandes
                 des utilisateurs entre les différentes copies du microservice.
                 Grâce à cette organisation, Kubernetes crée suffisamment de copies des microservices de manière
                 à supporter la charge, ce qui rend l'application accessible à un grand nombre d'utilisateurs.
