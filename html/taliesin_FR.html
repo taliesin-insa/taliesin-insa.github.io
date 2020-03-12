@@ -257,15 +257,15 @@
         <!-- Text origin -->
         <div class="container">
             <p class="text-justify">
-                Dans le cadre de ses recherches l’équipe IntuiDoc de l’IRISA, en collaboration avec les archives
+                Dans le cadre de ses recherches, l’équipe IntuiDoc de l’IRISA, en collaboration avec les archives
                 départementales d’Ille-et-Vilaine, cherche à faire avancer le domaine de la reconnaissance
                 d’écriture manuscrite afin de rendre plus accessibles des textes anciens qui sont souvent peu
                 compréhensibles. En effet, l'écriture manuscrite des siècles passés ainsi que les dégradations dues
                 au passage du temps diminuent la lisibilité de ces documents. En s'aidant de systèmes automatiques,
-                cela simplifie ainsi grandement leur exploitation.
+                cela simplifie ainsi grandement la compréhension et l'extraction d'informations de ces textes manuscrits.
                 <br><br>
                 Il n’est pas simple d’écrire un programme qui reconnaît des textes manuscrits, c’est pourquoi la
-                plupart des systèmes de reconnaissance d’écriture sont basés sur des algorithmes intelligents. Ces
+                plupart des systèmes de reconnaissance d’écriture sont basés sur de l'intelligence artificielle. Ces
                 algorithmes sont souvent formés de réseaux de neurones qui ont besoin d’apprendre à quoi ressemblent
                 les différents caractères, peu importe la langue et le style du rédacteur.
                 <br>
@@ -438,7 +438,7 @@
                     <i class="fas fa-genderless mr-2"></i>
                     </span>
                     Au centre on trouve l'<b>interface</b>, qui correspond à la page web
-                    envoyée à l'utilisateur.
+                    sur laquelle l'utilisateur navigue
                 </p></li>
                 <li><p class="text-left">
                     <span class="text-primary">
@@ -483,13 +483,12 @@
                 <a href="https://www.docker.com/"><b style="color: #0db7ed;">Docker</b></a>.
                 Kubernetes est un <i>orchestrateur</i> qui se charge d'exécuter simultanément tous les blocs de l'application,
                 la rendant opérationnelle.
-                <br>
-                <br>
                 Chacun des microservices de Taliesin est encapsulé dans un <i>conteneur</i> Docker. Ces conteneurs sont
-                une surcouche aux microservices qui permet à Kubernetes de les gérer de manière indépendante. Il est
-                ainsi possible d'exécuter plusieurs fois un bloc de l'application, et de répartir les demandes des
-                utilisateurs entre les différentes copies du microservice.
+                une surcouche aux microservices qui permet à Kubernetes de les gérer de manière indépendante.
                 <br>
+                <br>
+                Il est ainsi possible d'exécuter plusieurs fois un bloc de l'application, et de répartir les demandes
+                des utilisateurs entre les différentes copies du microservice.
                 Grâce à cette organisation, Kubernetes crée suffisamment de copies des microservices de manière
                 à supporter la charge, ce qui rend l'application accessible à un grand nombre d'utilisateurs.
             </p>
