@@ -491,8 +491,10 @@
                 <br>
                 Il est ainsi possible d'exécuter plusieurs fois un bloc de l'application et de répartir les demandes
                 des utilisateurs entre les différentes copies du microservice.
-                Grâce à cette organisation, Kubernetes crée suffisamment de copies des microservices de manière
-                à supporter la charge, ce qui rend l'application accessible à un grand nombre d'utilisateurs.
+                Grâce à cette organisation, Kubernetes est capable d'adapter le nombre de copies des microservices en
+                fonction de la charge. Par exemple, si le nombre d'utilisateurs est élevé ou la charge de calcul
+                demandée par un utilisateur est conséquente, Kubernetes augmentera automatiquement le nombre de
+                microservices pour suivre la demande.
             </p>
         </div>
     </div>
