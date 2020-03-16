@@ -249,33 +249,29 @@
 <div id="origin" class="before-section mb-5">
     <div class="container w-100 section section-gray p-4">
         <!-- Title origin -->
-        <h1 class="display-3 text-secondary-light section-tile section-title-after mb-3">Pourquoi Taliesin ?</h1>
+        <h1 class="display-3 text-secondary-light section-tile section-title-after mb-3">Why Taliesin ?</h1>
 
         <!-- Text origin -->
         <div class="container">
             <p class="text-justify">
-                Dans le cadre de ses recherches, l’équipe IntuiDoc de l’IRISA, en collaboration avec les archives
-                départementales d’Ille-et-Vilaine, cherche à faire avancer le domaine de la reconnaissance
-                d’écriture manuscrite afin de rendre plus accessibles des textes anciens qui sont souvent peu
-                compréhensibles. En effet, l'écriture manuscrite des siècles passés ainsi que les dégradations dues
-                au passage du temps diminuent la lisibilité de ces documents. En s'aidant de systèmes automatiques,
-                cela simplifie ainsi grandement la compréhension et l'extraction d'informations de ces textes
-                manuscrits.
+                In the course of their research, the IntuiDoc team from IRISA, in collaboration with the Ill-et-Villaine
+                department archives, aims to make advancements in the handwritten text recognization field in order to
+                make older documents more accessible. These documents tend to be difficult to understand, indeed the
+                handwriting of the past centuries and the natural degradation documents suffer from while aging make
+                them more difficult to read. In this context, automatic recognizers are seen as a promising solution to
+                extract information from these documents and make them more accessible to the general public.
                 <br><br>
-                Il n’est pas simple d’écrire un programme qui reconnaît des textes manuscrits, c’est pourquoi la
-                plupart des systèmes de reconnaissance d’écriture sont basés sur de l'intelligence artificielle. Ces
-                algorithmes sont souvent formés de réseaux de neurones qui ont besoin d’apprendre à quoi ressemblent
-                les différents caractères, peu importe la langue et le style du rédacteur.
+                Developing a software to recognize handwritten text is not eas, that is why most systems are based on
+                artificial intelligence, and most often neural networks, that need to learn what the different
+                characters look like, no matter the language and the style of the writer.
                 <br>
-                Pour apprendre, ils ont besoin d’un grand nombre d’exemples (plusieurs milliers) qui sont longs et
-                fastidieux à construire à
-                la main. Ces exemples sont regroupés dans des bases d’apprentissage, associant des images de textes
-                manuscrits avec leur transcription numérique. Ainsi, l’algorithme apprend à reconnaître les
-                différentes lettres en comparant la transcription fournie (la vérité) avec les lettres qu'il a reconnu.
-                <br>
-                <br>
-                Taliesin fournit donc un système qui facilite la génération de ces bases d'apprentissage, afin de
-                faciliter le travail des chercheurs.
+                To learn this, these systems require an important number of examples (thousands of them), and the
+                constitution of those collections of examples is a long and tedious process. These example collections
+                are most often presented as training databases associating an image of a text (the input that the system
+                will receive) with its transcription (the output that we want our system to give).
+                <br><br>
+                Taliesin provides an application that facilitate the generation of these training databases, to
+                alleviate the researchers' work.
             </p>
             <img class="rounded mx-auto d-block mt-4" src="../images/manager.png" alt="manager"/>
         </div>
@@ -286,7 +282,7 @@
 <div id="mockups" class="before-section mb-5">
     <div class="container w-100 section section-blue p-4">
         <!-- Title mockups -->
-        <h1 class="display-3 text-primary section-tile mb-4">Présentation de l'interface</h1>
+        <h1 class="display-3 text-primary section-tile mb-4">Presentation of the interface</h1>
 
         <!-- Carousel mockups -->
         <div id="mockups-carousel" class="carousel slide w-100 mx-auto" data-ride="carousel">
@@ -306,11 +302,11 @@
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="../images/mockups/mockup-accueil.png" alt="Mockup home page">
                     <div class="carousel-caption d-none mb-4">
-                        <h5 class="mb-4">Page d'accueil</h5>
+                        <h5 class="mb-4">Home Page</h5>
                         <p>
-                            Sur la page d'accueil de Taliesin, l'utilisateur a accès à un tableau de bord recensant
-                            l'ensemble des bases en cours d'annotation. Depuis cette page, il peut rejoindre les pages
-                            d'annotation, de gestion des bases ou de gestion du reconnaisseur automatique d'écriture.
+                            On Taliesin's home page, the user has accesses a dashboard presenting all databases
+                            currently being annotated. From this page they access all other pages : Database annotation
+                            or managemenent or recognizer management.
                         </p>
                     </div>
                     <div class="caption-overlay"></div>
@@ -321,21 +317,19 @@
                     <img class="d-block w-100" src="../images/mockups/mockup-annotation.png"
                          alt="Mockup annotation page">
                     <div class="carousel-caption d-none mb-4">
-                        <h5 class="mb-4">Page d'annotation</h5>
+                        <h5 class="mb-4">Annotation page</h5>
                         <p>
-                            C'est sur cette page que l'utilisateur peut taper la transcription du texte contenu dans les
-                            images
-                            qui sont affichées. Après avoir annoté toutes les images, l'utilisateur peut valider les
-                            transcriptions réalisées grâce au bouton vert en bas de page.
+                            This page is the core of the application, on the user can type the transcription of the text
+                            they see in the snippets. Once they have annotated every snippet, the user validates their
+                            work with the green button at the bottom of the page.
                             <br><br>
-                            L'utilisateur peut activer ou non les suggestions de transcriptions automatiques du
-                            reconnaisseur.
-                            Un petit symbole d'éclair présent à gauche des images permet d'indiquer quand une
-                            transcription est issue du reconnaisseur.
-                            Le bouton en forme de croix rouge à côté de chaque image permet d'indiquer qu'elle n'est pas
-                            lisible.
-                            Des raccourcis sont également disponibles pour remplacer les clics répétitifs et faciliter
-                            l'annotation.
+                            The user can enable or disable the automatic transcription suggestions coming from our
+                            recognizer. A small lightning symbol appears next to the pre-filled text field to indicate
+                            that the content comes from our system's recognizer.
+                            The red button with a cross marks a snippet as unreadable.
+                            <br>
+                            Of course this page has a lot of keyboard shortcuts to avoid an outstanding number of clicks
+                            and make this works less tedious.
                         </p>
                     </div>
                     <div class="caption-overlay"></div>
@@ -346,20 +340,22 @@
                     <img class="d-block w-100" src="../images/mockups/mockup-base.png"
                          alt="Mockup database management page">
                     <div class="carousel-caption d-none mb-4">
-                        <h5 class="mb-4">Page de gestion de la base d'apprentissage</h5>
+                        <h5 class="mb-4">Database management page</h5>
                         <p>
-                            Cette page permet à l'utilisateur d'avoir des informations sur le statut de la base en cours
-                            d'annotation (pourcentage d'annotation, nombre d'images illisibles, etc.).
+                            This page is where the user can get all kind of informations about the database currently
+                            being annotated (percetage of the database annotated, unreadable, etc.).
                         </p>
                         <br>
-                        L'utilisateur a accès à différentes options de gestion :
+                        The user has access to several management options :
                         <ul style="text-align: left">
-                            <li>ajouter des images à annoter dans la base</li>
-                            <li>sauvegarder ou charger une sauvegarde de la base (si besoin de réaliser des sauvegardes
-                                régulières par exemple)
+                            <li>add snippets to be annotated in the database</li>
+                            <li>
+                                save the database or load an existing save (if they need to make regular backup for
+                                example)
                             </li>
-                            <li>exporter la base annotée (sous forme d'archive avec les images et des
-                                fichiers descriptifs contenant les transcriptions)
+                            <li>
+                                export the annotated database (they will get an archive containing the snippets and
+                                their transcriptions)
                             </li>
                         </ul>
 
@@ -372,16 +368,15 @@
                     <img class="d-block w-100" src="../images/mockups/mockup-reco.png"
                          alt="Mockup recognizer management page">
                     <div class="carousel-caption d-none mb-4">
-                        <h5 class="mb-4">Page de gestion du reconnaisseur automatique d'écriture manuscrite</h5>
+                        <h5 class="mb-4">Handwritten text recognizer management</h5>
                         <p>
-                            Cette page de l'application donne l'opportunité à l'utilisateur de gérer le système de
-                            reconnaissance automatique mis en place. Il peut ainsi configurer de nouveaux systèmes et
-                            apprendre ces reconnaisseurs, afin d'adapter au mieux le reconnaisseur à ses besoins.
-                            Le reconnaisseur devient ainsi meilleur dans ses suggestions de transcription.
+                            This page lets the user manage the handwritten text recognizer. They can set up a new
+                            recognizer and train them to make them fit more specifically their database. The recognizer
+                            will then use this new knowledge to improve its transcription suggestions.
                             <br><br>
-                            Différentes mesures et statistiques sont fournies à l'utilisateur afin de l'aider à décider
-                            quel système utiliser. Plus un reconnaisseur est performant, moins il se trompe dans ses
-                            suggestions, ce qui accélère l'annotation de la base d'apprentissage.
+                            Several measurement points are shown to the user to help them decide what system to use.
+                            Once recognizer is tunes, it will make more accurate suggestions and speed up the annotation
+                            process even more.
                         </p>
                     </div>
                     <div class="caption-overlay"></div>
@@ -409,90 +404,86 @@
 <div id="microservices" class="before-section mb-5">
     <div class="container w-100 section section-gray p-4">
         <!-- Title architecture -->
-        <h1 class="display-3 text-secondary-light section-tile">Architecture technique</h1>
+        <h1 class="display-3 text-secondary-light section-tile">Technical architecture</h1>
         <h5 class="text-primary section-title-after mb-3 text-center">
-            <i>Spécificités techniques du projet : pour les curieux ou les aguerris !</i>
+            <i>Technical details of the project : for the curious or the experienced</i>
         </h5>
 
         <!-- Text architecture -->
         <div class="container text-center">
             <p class="text-justify">
-                Taliesin est une application web multi-utilisateurs. Afin de pouvoir gérer une forte charge liée à un
-                grand nombre d'utilisateurs simultanés, l'application a été conçue avec une architecture en
+                Taliesin is to become a multi-user web application. In order to deal with a heavy load due to a number
+                of user simultaneously connected, the application has been designed with a architecture based on
                 microservices.
-                Cela signifie que l'application est découpée en plusieurs sous-blocs fonctionnels et indépendants les
-                uns des autres. Chaque bloc est donc chargé d'une fonctionnalité en particulier dans l'application.
+                This means that the application is divided into several functional blocks running independently from
+                each other.
                 <br>
+                In our case, Taliesin is divided in 6 microservices (represented as hexagons on the schema below).
+
+
                 Dans notre cas, Taliesin est décomposé en 6 microservices (représentés par des hexagones sur le schéma).
             </p>
             <img class="img-fluid w-75" src="../images/schema-µserv.png" alt="Microservices schema">
             <p class="text-justify">
                 <br>
-                Chaque microservice se voit attribuer un rôle spécifique, représenté par une fonctionnalité principale.
-                Les liens entre microservices mettent en évidence les échanges de données entre eux et les appels
-                entre microservices. Les différents blocs sont présentés ci-dessous.
+                Each microservice is given a specific role, represented by a main functionality. The link between
+                microservices indicate the data exchange between them and the calls they make between each other.
+                These blocks are presented below.
             </p>
             <ul>
                 <li><p class="text-left">
                     <span class="text-primary">
                     <i class="fas fa-genderless mr-2"></i>
                     </span>
-                    Au centre, on trouve l'<b>interface</b>, qui correspond à la page web
-                    sur laquelle l'utilisateur navigue.
+                    In the middle you can see the <b>interface</b>, this corresponds to the webpage that the user
+                    browses.
                 </p></li>
                 <li><p class="text-left">
                     <span class="text-primary">
                     <i class="fas fa-genderless mr-2"></i>
                     </span>
-                    Le microservice de <b>stockage</b> fait l'interface avec la base de
-                    données de l'application.
+                    The <b>storage</b> service acts as a link for the application's database.
                 </p></li>
                 <li><p class="text-left">
                    <span class="text-primary">
                     <i class="fas fa-genderless mr-2"></i>
                     </span>
-                    Le microservice d'<b>import</b> gère l'ajout d'images dans la base
-                    de données.
+                    The <b>import</b> service manages the upload of new images in the database.
                 </p></li>
                 <li><p class="text-left">
                     <span class="text-primary">
                     <i class="fas fa-genderless mr-2"></i>
                     </span>
-                    Le microservice d'<b>export</b> à l'inverse permet à l'utilisateur
-                    d'exporter la base finale une fois toutes les images annotées.
+                    The <b>export</b> service lets the user export the final database once it has been annotated.
                 </p></li>
                 <li><p class="text-left">
                     <span class="text-primary">
                     <i class="fas fa-genderless mr-2"></i>
                     </span>
-                    La <b>conversion</b> intervient au moment de l'import et de l'export
-                    afin de transformer les données vers et depuis un format interne à l'application.
+                    The <b>conversion</b> service is needed at the import and the export, it transforms data from
+                    the internal data format to an exploitable one and vice-versa.
                 </p></li>
                 <li><p class="text-left">
                     <span class="text-primary">
                     <i class="fas fa-genderless mr-2"></i>
                     </span>
-                    La partie <b>reconnaissance</b> gère le reconnaisseur automatique
-                    utilisé dans l'application pour faire des suggestions au cours de l'annotation.
+                    The <b>recognizer</b> service manages the automatic recognizer used in the application to make
+                    suggestions.
                 </p></li>
             </ul>
             <p class="text-justify">
                 <br>
-                Cette architecture est couplée aux technologies
-                <a href="https://kubernetes.io/fr/"><b style="color: #316be4;">Kubernetes</b></a> et
+                This architecture uses
+                <a href="https://kubernetes.io/fr/"><b style="color: #316be4;">Kubernetes</b></a> and
                 <a href="https://www.docker.com/"><b style="color: #0db7ed;">Docker</b></a>.
-                Kubernetes est un orchestrateur qui se charge d'exécuter simultanément tous les blocs de l'application,
-                la rendant opérationnelle.
-                Chacun des microservices de Taliesin est encapsulé dans un conteneur Docker. Ces conteneurs sont
-                une surcouche aux microservices qui permet à Kubernetes de les gérer de manière indépendante.
+                Kubernetes is an orchestrator that runs all the application blocks simultaneously and manages the
+                communication between them. Each one of Taliesin's microservices is runs inside a Docker container.
+                These containers are an additional encapsulation level that lets Kubernetes manage them independently.
                 <br>
                 <br>
-                Il est ainsi possible d'exécuter plusieurs fois un bloc de l'application et de répartir les demandes
-                des utilisateurs entre les différentes copies du microservice.
-                Grâce à cette organisation, Kubernetes est capable d'adapter le nombre de copies des microservices en
-                fonction de la charge. Par exemple, si le nombre d'utilisateurs est élevé ou la charge de calcul
-                demandée par un utilisateur est conséquente, Kubernetes augmentera automatiquement le nombre de
-                microservices pour suivre la demande.
+                This means it is possible to run the same block several times to answer an increased workload on a
+                specific part of the application by multiplying the number of instances of one microservice and dividing
+                the load between them.
             </p>
         </div>
     </div>
