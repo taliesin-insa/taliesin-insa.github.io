@@ -28,7 +28,7 @@
 
     <!-- Logo -->
     <div class="navbar-brand">
-        <a href="taliesin_FR.html"><img class="header-logo" src="../images/logos/logo-bicolor.png" alt="logo"></a>
+        <a href="taliesin_ENG.html"><img class="header-logo" src="../images/logos/logo-bicolor.png" alt="logo"></a>
     </div>
 
     <!-- Collapse nav button -->
@@ -40,9 +40,9 @@
 
         <!-- Sections of the page -->
         <ul class="main-nav nav navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link active" href="#home">Accueil</a></li>
-            <li class="nav-item"><a class="nav-link" href="#team">Équipe</a></li>
-            <li class="nav-item"><a class="nav-link" href="#origin">Origine</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="#origin">Origins</a></li>
             <li class="nav-item"><a class="nav-link" href="#mockups">Interface</a></li>
             <li class="nav-item"><a class="nav-link" href="#microservices">Architecture</a></li>
         </ul>
@@ -55,8 +55,8 @@
         <!-- Switch language -->
         <ul class="nav navbar-nav navbar-right">
             <li>
-                <a href="taliesin_ENG.html">
-                    <img alt="English" title="English" src="../images/united-kingdom-flag-button-square-icon-32.png"
+                <a href="taliesin_FR.html">
+                    <img alt="French" title="French" src="../images/france-flag-button-square-icon-32.png"
                          width="32" height="32">
                 </a>
             </li>
@@ -75,54 +75,51 @@
 <div id="home" class="before-section mb-5">
     <div class="container w-100 section section-gray p-4">
         <!-- Title project description -->
-        <h1 class="display-3 text-secondary-light section-tile section-title-after mb-3">Taliesin, c'est quoi ?</h1>
+        <h1 class="display-3 text-secondary-light section-tile section-title-after mb-3">What is Taliesin ?</h1>
 
         <div class="container">
             <!-- Text project description -->
             <p class="text-justify">
-                Notre projet a pour but de fournir une application permettant de simplifier la création de
-                bases d'images annotées. Ces bases serviront pour l’entraînement de divers systèmes de
-                reconnaissance d’écriture manuscrite. Ces reconnaisseurs seront par exemple capables de
-                retranscrire de manière automatique des documents manuscrits (registres paroissiaux,
-                registres d’état civil, documents d’entreprise, etc.) pour les rendre plus exploitables. Ce
-                projet permet donc de gagner du temps pour la phase précédant la compréhension de documents
-                anciens, en simplifiant l’entraînement de systèmes complexes.
+                Our project aims to provide an application that simplifies the creation of annotated snippets databases.
+                These databases will be used to train several different handwritten text recognizers.
+                These recognizers will be able to automatically transcribe handwritten documents (such as church and
+                civil registers, company documents, etc.) to make them easier to use digitally.
+                This project speeds up the process before we get to the recognization phase by simplifying the training
+                of a new recognizer.
                 <br>
                 <img class="rounded mx-auto d-block mt-4" src="../images/schema-general.png" alt="schema"
                      style="max-height: 400px;"/>
                 <br>
-                Plus concrètement, Taliesin est une application qui prend des documents scannés en entrée
-                et qui permet à un utilisateur de les annoter. Cela signifie qu'une transcription est
-                associée au texte présent dans l'image. L'application propose deux modes à l'utilisateur :
+                Practically, Taliesin is an application that takes scanned documents as an input and lets the user
+                annotate them (Annotating in this case is associating an image with its transcription).
+                The application has two modes :
             </p>
             <br>
             <ul>
                 <li class="mb-2">
                     <p>
                         <i class="fas fa-feather mr-2"></i>
-                        un mode d'<span class="text-primary">annotation manuelle</span>, où l'utilisateur tape
-                        intégralement les transcriptions du document scanné
+                        A <span class="text-primary">manual annotation</span> mode, in which the user types the whole
+                        transcription of the document.
                     </p>
                 </li>
                 <li>
                     <p>
                         <i class="fas fa-pen-alt mr-2"></i>
-                        un mode <span class="text-primary">assisté par un système automatique</span>, où des
-                        transcriptions
-                        sont générées au préalable par un reconnaisseur d'écriture manuscrite déjà entraîné.
-                        Dans ce mode, l'utilisateur n'a plus qu'à corriger les éventuelles erreurs de transcription
-                        faites par le reconnaisseur qui l'assiste dans son annotation. Le reconnaisseur utilisé
-                        pour la première version de l'application est <a
-                            href="https://github.com/jpuigcerver/Laia">Laia</a>.
+                        A <span class="text-primary">recognizer assisted</span> mode, in which transcriptions are
+                        generated in advance by an internal recognizer. In this mode the user only validates the
+                        transcriptions made by the system, or corrects the errors if there are some.
+                        During the development and in the first version of the application, we will be using <a
+                            href="https://github.com/jpuigcerver/Laia">Laia</a> as our recognizer.
                     </p>
                 </li>
             </ul>
             <br>
             <p>
-                Taliesin génère donc un ensemble d'exemples d'apprentissage (couples <i>image +
-                transcription du texte dans l'image</i>) validés par l'utilisateur.
-                Une fois la base d'images annotée, l'utilisateur n'a plus qu'à exporter les exemples en question qu'il
-                pourra utiliser pour entraîner des reconnaisseurs d'écriture manuscrite.
+                In both cases Taliesin generates a dataset of training examples (pairs of an image and its
+                transcription) validated by a human user.
+                Once the database is annotated, the user can simply export these examples and use them as an input for
+                the training of their own recognizer.
             </p>
         </div>
 
@@ -262,7 +259,8 @@
                 d’écriture manuscrite afin de rendre plus accessibles des textes anciens qui sont souvent peu
                 compréhensibles. En effet, l'écriture manuscrite des siècles passés ainsi que les dégradations dues
                 au passage du temps diminuent la lisibilité de ces documents. En s'aidant de systèmes automatiques,
-                cela simplifie ainsi grandement la compréhension et l'extraction d'informations de ces textes manuscrits.
+                cela simplifie ainsi grandement la compréhension et l'extraction d'informations de ces textes
+                manuscrits.
                 <br><br>
                 Il n’est pas simple d’écrire un programme qui reconnaît des textes manuscrits, c’est pourquoi la
                 plupart des systèmes de reconnaissance d’écriture sont basés sur de l'intelligence artificielle. Ces
