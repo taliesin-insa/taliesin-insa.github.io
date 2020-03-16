@@ -81,17 +81,17 @@
             <!-- Text project description -->
             <p class="text-justify">
                 Our project aims to provide an application that simplifies the creation of annotated snippets databases.
-                These databases will be used to train several different handwritten text recognizers.
+                These databases will be used to train several handwritten text recognizers.
                 These recognizers will be able to automatically transcribe handwritten documents (such as church and
                 civil registers, company documents, etc.) to make them easier to use digitally.
-                This project speeds up the process before we get to the recognization phase by simplifying the training
+                This project speeds up the process before we get to the recognition phase by simplifying the training
                 of a new recognizer.
                 <br>
                 <img class="rounded mx-auto d-block mt-4" src="../images/schema-general.png" alt="schema"
                      style="max-height: 400px;"/>
                 <br>
                 Practically, Taliesin is an application that takes scanned documents as an input and lets the user
-                annotate them (Annotating in this case is associating an image with its transcription).
+                annotate them (annotating in this case is associating an image with its transcription).
                 The application has two modes :
             </p>
             <br>
@@ -99,14 +99,14 @@
                 <li class="mb-2">
                     <p>
                         <i class="fas fa-feather mr-2"></i>
-                        A <span class="text-primary">manual annotation</span> mode, in which the user types the whole
-                        transcription of the document.
+                        a <span class="text-primary">manual annotation</span> mode, in which the user types the whole
+                        transcription of the document
                     </p>
                 </li>
                 <li>
                     <p>
                         <i class="fas fa-pen-alt mr-2"></i>
-                        A <span class="text-primary">recognizer assisted</span> mode, in which transcriptions are
+                        a <span class="text-primary">recognizer assisted</span> mode, in which transcriptions are
                         generated in advance by an internal recognizer. In this mode the user only validates the
                         transcriptions made by the system, or corrects the errors if there are some.
                         During the development and in the first version of the application, we will be using <a
@@ -254,14 +254,14 @@
         <!-- Text origin -->
         <div class="container">
             <p class="text-justify">
-                In the course of their research, the IntuiDoc team from IRISA, in collaboration with the Ill-et-Villaine
-                department archives, aims to make advancements in the handwritten text recognization field in order to
+                In the course of their research, the IntuiDoc team from IRISA, in collaboration with the Ille-et-Villaine
+                department archives, aims to make advancements in the handwritten text recognition field in order to
                 make older documents more accessible. These documents tend to be difficult to understand, indeed the
                 handwriting of the past centuries and the natural degradation documents suffer from while aging make
                 them more difficult to read. In this context, automatic recognizers are seen as a promising solution to
                 extract information from these documents and make them more accessible to the general public.
                 <br><br>
-                Developing a software to recognize handwritten text is not eas, that is why most systems are based on
+                Developing a software to recognize handwritten text is not easy, that is why most systems are based on
                 artificial intelligence, and most often neural networks, that need to learn what the different
                 characters look like, no matter the language and the style of the writer.
                 <br>
@@ -304,9 +304,9 @@
                     <div class="carousel-caption d-none mb-4">
                         <h5 class="mb-4">Home Page</h5>
                         <p>
-                            On Taliesin's home page, the user has accesses a dashboard presenting all databases
-                            currently being annotated. From this page they access all other pages : Database annotation
-                            or managemenent or recognizer management.
+                            On Taliesin's home page, the user has access to a dashboard presenting all databases
+                            currently being annotated. From this page they access all other pages: database annotation
+                            or management and recognizer management.
                         </p>
                     </div>
                     <div class="caption-overlay"></div>
@@ -319,8 +319,8 @@
                     <div class="carousel-caption d-none mb-4">
                         <h5 class="mb-4">Annotation page</h5>
                         <p>
-                            This page is the core of the application, on the user can type the transcription of the text
-                            they see in the snippets. Once they have annotated every snippet, the user validates their
+                            This page is the core of the application, on which the user can type the transcription of the text
+                            they see in the snippets. Once they have annotated every snippet, the users validate their
                             work with the green button at the bottom of the page.
                             <br><br>
                             The user can enable or disable the automatic transcription suggestions coming from our
@@ -329,7 +329,7 @@
                             The red button with a cross marks a snippet as unreadable.
                             <br>
                             Of course this page has a lot of keyboard shortcuts to avoid an outstanding number of clicks
-                            and make this works less tedious.
+                            and make this work less tedious.
                         </p>
                     </div>
                     <div class="caption-overlay"></div>
@@ -370,12 +370,12 @@
                     <div class="carousel-caption d-none mb-4">
                         <h5 class="mb-4">Handwritten text recognizer management</h5>
                         <p>
-                            This page lets the user manage the handwritten text recognizer. They can set up a new
-                            recognizer and train them to make them fit more specifically their database. The recognizer
-                            will then use this new knowledge to improve its transcription suggestions.
+                            This page lets the user manage the handwritten text recognizer. They can set up new
+                            recognizers and train them to make them fit more specifically their database. The recognizers
+                            will then use this new knowledge to improve their transcription suggestions.
                             <br><br>
                             Several measurement points are shown to the user to help them decide what system to use.
-                            Once recognizer is tunes, it will make more accurate suggestions and speed up the annotation
+                            Once the recognizer is tuned, it will make more accurate suggestions and speed up the annotation
                             process even more.
                         </p>
                     </div>
@@ -412,30 +412,27 @@
         <!-- Text architecture -->
         <div class="container text-center">
             <p class="text-justify">
-                Taliesin is to become a multi-user web application. In order to deal with a heavy load due to a number
-                of user simultaneously connected, the application has been designed with a architecture based on
+                Taliesin is to become a multi-user web application. In order to deal with a heavy load due to a massive
+                number of users simultaneously connected, the application has been designed with an architecture based on
                 microservices.
                 This means that the application is divided into several functional blocks running independently from
                 each other.
                 <br>
-                In our case, Taliesin is divided in 6 microservices (represented as hexagons on the schema below).
-
-
-                Dans notre cas, Taliesin est décomposé en 6 microservices (représentés par des hexagones sur le schéma).
+                In our case, Taliesin is divided into 6 microservices (represented as hexagons on the schema below).
             </p>
             <img class="img-fluid w-75" src="../images/schema-µserv.png" alt="Microservices schema">
             <p class="text-justify">
                 <br>
-                Each microservice is given a specific role, represented by a main functionality. The link between
-                microservices indicate the data exchange between them and the calls they make between each other.
-                These blocks are presented below.
+                Each microservice is given a specific role, represented by a main functionality. The link between 2
+                microservices indicates the data exchange between them and the calls they make between each other.
+                The microservices are presented below.
             </p>
             <ul>
                 <li><p class="text-left">
                     <span class="text-primary">
                     <i class="fas fa-genderless mr-2"></i>
                     </span>
-                    In the middle you can see the <b>interface</b>, this corresponds to the webpage that the user
+                    In the middle you can see the <b>interface</b>, which corresponds to the webpage that the user
                     browses.
                 </p></li>
                 <li><p class="text-left">
@@ -476,8 +473,8 @@
                 This architecture uses
                 <a href="https://kubernetes.io/fr/"><b style="color: #316be4;">Kubernetes</b></a> and
                 <a href="https://www.docker.com/"><b style="color: #0db7ed;">Docker</b></a>.
-                Kubernetes is an orchestrator that runs all the application blocks simultaneously and manages the
-                communication between them. Each one of Taliesin's microservices is runs inside a Docker container.
+                Kubernetes is an orchestrator that runs all the application's blocks simultaneously and manages the
+                communication between them. Each one of Taliesin's microservices is run inside a Docker container.
                 These containers are an additional encapsulation level that lets Kubernetes manage them independently.
                 <br>
                 <br>
